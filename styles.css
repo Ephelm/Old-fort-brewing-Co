@@ -8,15 +8,26 @@
 body {
     font-family: 'Arial', sans-serif;
     color: #f4f4f4;
-    background-color: #222;
+    background-color: #333333;
     line-height: 1.6;
+}
+
+/* Header with Logo */
+.header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.header img {
+    max-width: 200px;
 }
 
 /* Hero Section */
 .hero {
     position: relative;
     height: 100vh;
-    background-image: url('images/brewery-background.jpg');
+    background-image: url('images/brewery-hero.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -52,7 +63,7 @@ body {
 /* Menu List Section */
 .menu-list {
     padding: 50px;
-    background-color: #333;
+    background-color: #444;
     text-align: center;
     margin-top: -40px;
 }
@@ -70,7 +81,7 @@ body {
 }
 
 .beer-item {
-    background-color: #444;
+    background-color: #555;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -100,7 +111,7 @@ body {
 
 .beer-info p {
     font-size: 1.2rem;
-    color: #ccc;
+    color: #ddd;
     margin: 10px 0;
 }
 
@@ -110,10 +121,11 @@ body {
     color: #fff;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #111;
+    background-color: #222;
     color: white;
     margin-top: 40px;
 }
