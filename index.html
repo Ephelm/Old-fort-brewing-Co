@@ -1,103 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Old Fort Brewing Co. Beer Menu</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header class="header">
-        <img src="images/logo.png" alt="Old Fort Brewing Co. Logo">
-    </header>
-    
-    <section class="hero">
-        <div class="overlay"></div>
-        <div class="hero-text">
-            <h1>Old Fort Brewing Co.</h1>
-            <p>Discover the finest craft beers in Forty Fort, PA</p>
-        </div>
-    </section>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+}
 
-    <section class="menu-list">
-        <h2>Our Beer Selection</h2>
-        <div class="beer-grid">
-            <div class="beer-item">
-                <img src="images/beer1.jpg" alt="Golden Lager">
-                <div class="beer-info">
-                    <h3>Golden Lager</h3>
-                    <p>Light, crisp, and refreshing with a smooth finish.</p>
-                    <p class="price">$5.00</p>
-                </div>
-            </div>
-            <div class="beer-item">
-                <img src="images/beer2.jpg" alt="Hoppy IPA">
-                <div class="beer-info">
-                    <h3>Hoppy IPA</h3>
-                    <p>Bold hop flavors with citrus and pine notes.</p>
-                    <p class="price">$6.50</p>
-                </div>
-            </div>
-            <div class="beer-item">
-                <img src="images/beer3.jpg" alt="Dark Stout">
-                <div class="beer-info">
-                    <h3>Dark Stout</h3>
-                    <p>Rich and creamy with hints of chocolate and coffee.</p>
-                    <p class="price">$7.00</p>
-                </div>
-            </div>
-            <div class="beer-item">
-                <img src="images/beer4.jpg" alt="Amber Ale">
-                <div class="beer-info">
-                    <h3>Amber Ale</h3>
-                    <p>Perfect balance of malt sweetness and hop bitterness.</p>
-                    <p class="price">$5.50</p>
-                </div>
-            </div>
-            <div class="beer-item">
-                <img src="images/beer5.jpg" alt="Pale Ale">
-                <div class="beer-info">
-                    <h3>Pale Ale</h3>
-                    <p>A smooth and aromatic ale with floral notes.</p>
-                    <p class="price">$6.00</p>
-                </div>
-            </div>
-            <div class="beer-item">
-                <img src="images/beer6.jpg" alt="Wheat Beer">
-                <div class="beer-info">
-                    <h3>Wheat Beer</h3>
-                    <p>Light-bodied and fruity with a hint of spice.</p>
-                    <p class="price">$5.75</p>
-                </div>
-            </div>
-            <div class="beer-item">
-                <img src="images/beer7.jpg" alt="Porter">
-                <div class="beer-info">
-                    <h3>Porter</h3>
-                    <p>Full-bodied with roasted malt flavors and caramel undertones.</p>
-                    <p class="price">$6.25</p>
-                </div>
-            </div>
-            <div class="beer-item">
-                <img src="images/beer8.jpg" alt="Sour Ale">
-                <div class="beer-info">
-                    <h3>Sour Ale</h3>
-                    <p>Tangy and refreshing with fruity and tart notes.</p>
-                    <p class="price">$6.75</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Old Fort Brewing Co. All Rights Reserved.</p>
-        <p>Location: Forty Fort, PA</p>
-        <p>Contact: info@oldfortbrewing.com | (570) 123-4567</p>
-        <p>Follow us on social media: 
-            <a href="#">Facebook</a> | 
-            <a href="#">Instagram</a> | 
-            <a href="#">Twitter</a>
-        </p>
-    </footer>
-</body>
-</html>
+/* Header */
+.header {
+    background: #333;
+    padding: 20px;
+    text-align: center;
+}
+.header img {
+    max-width: 200px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('images/brewery.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hero-text {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+/* Beer Menu */
+.menu-list {
+    padding: 40px 20px;
+}
+.menu-list h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.beer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.beer-item {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.beer-info h3 {
+    color: #ffcc00;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 20px;
+    margin-top: 20px;
+}
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
+}
