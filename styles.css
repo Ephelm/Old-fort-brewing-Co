@@ -52,6 +52,7 @@ body {
 /* Beer Menu */
 .menu-list {
     padding: 40px 20px;
+    background: url('images/beer-background.jpg') no-repeat center center/cover;
 }
 .menu-list h2 {
     font-size: 2rem;
