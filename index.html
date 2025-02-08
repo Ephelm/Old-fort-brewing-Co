@@ -3,35 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Old Fort Brewing Menu</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Old Fort Brewing Company - Beer Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c1e1e;
+            color: #fff;
+        }
+        header {
+            background-color: #4a2c2c;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo {
+            width: 150px;
+        }
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .menu {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .menu h2 {
+            margin-bottom: 20px;
+        }
+        .beer-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .beer-item {
+            background: #3a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: left;
+        }
+        .beer-item h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #4a2c2c;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Old Fort Brewing Logo" class="logo">
+        <img src="logo.png" alt="Old Fort Brewing Company Logo" class="logo">
     </header>
-    
+
+    <div class="hero">
+        <h1>Welcome to Old Fort Brewing Company</h1>
+    </div>
+
     <section class="menu">
-        <h1>Our Beers</h1>
-        <div class="menu-list">
+        <h2>Our Beer Selection</h2>
+        <div class="beer-list">
             <div class="beer-item">
-                <img src="beer1.jpg" alt="IPA Beer">
-                <h2>Old Fort IPA</h2>
+                <h3>Old Fort IPA</h3>
                 <p>A classic IPA with bold hops and citrus notes.</p>
             </div>
             <div class="beer-item">
-                <img src="beer2.jpg" alt="Pilsner Beer">
-                <h2>Forty Pilsner</h2>
+                <h3>Forty Pilsner</h3>
                 <p>A crisp and refreshing pilsner with a smooth finish.</p>
             </div>
             <div class="beer-item">
-                <img src="beer3.jpg" alt="Stout Beer">
-                <h2>Dark Fortress Stout</h2>
+                <h3>Dark Fortress Stout</h3>
                 <p>A rich and creamy stout with hints of chocolate and coffee.</p>
+            </div>
+            <div class="beer-item">
+                <h3>Saison De Geia Mas</h3>
+                <p>Light amber ale with balanced flavors of wheat and subtle sweetness.</p>
+            </div>
+            <div class="beer-item">
+                <h3>Willow Street White Ale</h3>
+                <p>A refreshing blonde ale with a hint of citrus.</p>
+            </div>
+            <div class="beer-item">
+                <h3>Shellsling Lager</h3>
+                <p>A smooth American lager with a clean finish.</p>
+            </div>
+            <div class="beer-item">
+                <h3>P. Town Pils</h3>
+                <p>A traditional pilsner with a crisp taste.</p>
+            </div>
+            <div class="beer-item">
+                <h3>Flannel Season</h3>
+                <p>An imperial oatmeal stout with aromas of vanilla and maple syrup.</p>
             </div>
         </div>
     </section>
-    
+
     <footer>
         <p>Visit us at Old Fort Brewing Company, Forty Fort, PA.</p>
         <p>Follow us on <a href="https://facebook.com/OldFortBrewing">Facebook</a></p>
