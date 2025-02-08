@@ -1,87 +1,112 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: #e0e0e0;
-}
-
-header {
-    text-align: center;
-    padding: 20px;
     background-color: #222;
-}
-
-.logo {
-    max-width: 200px;
-}
-
-.welcome {
-    position: relative;
+    color: #fff;
     text-align: center;
 }
 
-.welcome-img {
-    width: 100%;
-    height: auto;
-    opacity: 0.9;
+/* Header */
+header {
+    background-color: #333;
+    padding: 20px;
 }
 
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.7);
+.logo-container img {
+    width: 150px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Beer Menu */
+.beer-menu {
     padding: 20px;
+}
+
+.beer-menu h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.beer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.beer-item {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.beer-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.beer-item p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.beer-item span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Brewery Images */
+.brewery-images {
+    padding: 20px;
+}
+
+.brewery-images h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.image-container img {
+    width: 45%;
+    max-width: 400px;
     border-radius: 10px;
 }
 
-.menu {
-    text-align: center;
-    padding: 40px;
-    background-color: #222;
-}
-
-h2 {
-    color: #d4af37;
-    font-size: 2rem;
-}
-
-.menu-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.menu-bg {
-    width: 100%;
-    max-width: 600px;
-    opacity: 0.8;
-}
-
-.menu-items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    max-width: 600px;
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 15px;
     margin-top: 20px;
 }
 
-.menu-item {
-    background: #333;
-    padding: 15px;
-    border-radius: 5px;
-    color: #d4af37;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1a1a1a;
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container img {
+        width: 90%;
+    }
 }
